@@ -43,10 +43,7 @@ Vcs-Git: https://salsa.debian.org/multimedia-team/openvdb.git
 Standards-Version: 4.6.1
 X-Python3-Version: >= 3.7
 
-Package: libopenvdb10.0t64
-Provides: ${t64:Provides}
-Replaces: libopenvdb10.0
-Breaks: libopenvdb10.0 (<< ${source:Version})
+Package: libopenvdb10.0
 Multi-Arch: same
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
@@ -60,10 +57,7 @@ Description: Sparse Volume Processing toolkit - lib
  .
  This package contains the libraries needed to run OpenVDB applications
 
-Package: libopenvdb-ax10.0t64
-Provides: ${t64:Provides}
-Replaces: libopenvdb-ax10.0
-Breaks: libopenvdb-ax10.0 (<< ${source:Version})
+Package: libopenvdb-ax10.0
 Multi-Arch: same
 Architecture: @AX_ARCHS@
 Depends: ${misc:Depends}, ${shlibs:Depends}
@@ -82,7 +76,7 @@ Architecture: any
 Section: libdevel
 Depends: libblosc-dev,
          libimath-dev,
-         libopenvdb10.0t64 (= ${binary:Version}),
+         libopenvdb10.0 (= ${binary:Version}),
          libtbb-dev,
          ${misc:Depends}
 Description: Sparse Volume Processing toolkit - dev
@@ -99,7 +93,7 @@ Architecture: @AX_ARCHS@
 Section: libdevel
 Depends: libblosc-dev,
          libimath-dev,
-         libopenvdb-ax10.0t64 (= ${binary:Version}),
+         libopenvdb-ax10.0 (= ${binary:Version}),
          libtbb-dev,
          ${misc:Depends}
 Description: Sparse Volume Processing toolkit - dev
@@ -116,7 +110,7 @@ Architecture: any
 Section: libdevel
 Depends: libblosc-dev,
          libimath-dev,
-         libopenvdb10.0t64 (= ${binary:Version}),
+         libopenvdb10.0 (= ${binary:Version}),
          libtbb-dev,
          ${misc:Depends}
 Description: Sparse Volume Processing toolkit - NanoVDB - dev

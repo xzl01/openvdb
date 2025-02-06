@@ -165,8 +165,8 @@ endif
 pkg_arun = libopenvdb-ax-tools
 pkg_nrun = libnanovdb-tools
 pkg_orun = libopenvdb-tools
-pkg_alib = libopenvdb-ax$(VER_SONAME)t64
-pkg_olib = libopenvdb$(VER_SONAME)t64
+pkg_alib = libopenvdb-ax$(VER_SONAME)
+pkg_olib = libopenvdb$(VER_SONAME)
 pkg_adev = libopenvdb-ax-dev
 pkg_ndev = libnanovdb-dev
 pkg_odev = libopenvdb-dev
